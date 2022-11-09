@@ -1,0 +1,11 @@
+{
+  "name": "template-rollup-sdk",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "clean": "rm -rf node_modules ./**/*/node_modules"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,39 @@
+{
+  "name": "create-shiqi",
+  "version": "0.1.2-alpha.0",
+  "description": "",
+  "type": "module",
+  "bin": {
+    "create-shiqi": "index.js",
+    "cva": "index.js"
+  },
+  "files": [
+    "index.js",
+    "template-*",
+    "dist"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "unbuild --stub",
+    "build": "unbuild",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [],
+  "author": "<liziw2012@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "unbuild": "^0.9.4"
+  },
+  "devDependencies": {
+    "@types/cross-spawn": "^6.0.2",
+    "@types/minimist": "^1.2.2",
+    "@types/node": "^18.11.9",
+    "@types/prompts": "^2.4.1",
+    "cross-spawn": "^7.0.3",
+    "kolorist": "^1.6.0",
+    "minimist": "^1.2.7",
+    "prompts": "^2.4.2",
+    "typescript": "^4.8.4"
+  }
+}
