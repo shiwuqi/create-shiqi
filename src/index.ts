@@ -160,14 +160,19 @@ const FRAMEWORKS: Framework[] = [
         ]
     },
     {
-        name: 'rollup',
-        display: 'Rollup',
+        name: 'library',
+        display: 'Library',
         color: red,
         variants: [
             {
                 name: 'rollup-ts',
                 display: 'TypeScript',
                 color: yellow
+            },
+            {
+                name: 'vite-react-library',
+                display: 'TypeScript',
+                color: blue
             }
         ]
     },
