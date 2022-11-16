@@ -18,5 +18,15 @@ export default defineConfig({
     qiankun(pkg.name, {
       useDevMode,
     }),
-  ]
+  ],
+  server: {
+    host: '0.0.0.0',
+    proxy: {
+      '/api': {
+        target: 'http://api-test.com',
+        changeOrigin: true,
+      },
+    },
+    cors: true,
+  },
 })
