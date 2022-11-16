@@ -1,3 +1,3 @@
-declare const test: () => void;
+declare const test: () => number;
 
 export { test };

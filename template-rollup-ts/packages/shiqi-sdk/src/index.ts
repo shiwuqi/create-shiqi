@@ -1,5 +1,5 @@
 const test = () => {
-    console.log('test');
+    return 1;
 };
 
 export {

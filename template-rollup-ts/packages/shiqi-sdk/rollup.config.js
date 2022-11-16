@@ -1,11 +1,11 @@
 import resolve from "@rollup/plugin-node-resolve";
 import babel from "@rollup/plugin-babel";
-import typescript2 from "rollup-plugin-typescript2";
 import { terser } from "rollup-plugin-terser";
 import commonjs from "@rollup/plugin-commonjs";
 import json from "@rollup/plugin-json";
 import autoExternal from "rollup-plugin-auto-external";
 import dts from "rollup-plugin-dts";
+import esbuild from 'rollup-plugin-esbuild';
 
 export default [
     {
@@ -35,7 +35,8 @@ export default [
                 exclude: "node_modules/**"
             }),
             terser(),
-            autoExternal()
+            autoExternal(),
+            esbuild()
         ],
         external: [],
     },

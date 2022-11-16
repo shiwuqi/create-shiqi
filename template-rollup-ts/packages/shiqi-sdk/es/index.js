@@ -1,1 +1,1 @@
-const o=()=>{console.log("test")};export{o as test};
+const o=()=>1;export{o as test};
