@@ -2,6 +2,8 @@ lockfileVersion: 5.4
 
 specifiers:
   '@commitlint/config-conventional': ^17.2.0
+  '@tanstack/react-query': ^4.16.1
+  '@types/lodash-es': ^4.17.6
   '@types/react': ^18.0.24
   '@types/react-dom': ^18.0.8
   '@typescript-eslint/eslint-plugin': ^5.42.1
@@ -16,6 +18,7 @@ specifiers:
   eslint-plugin-react: ^7.31.10
   husky: ^8.0.2
   lint-staged: ^13.0.3
+  lodash-es: ^4.17.21
   postcss: ^8.4.18
   prettier: ^2.7.1
   react: ^18.2.0
@@ -26,8 +29,10 @@ specifiers:
   vite-plugin-qiankun: ^1.0.15
 
 dependencies:
+  '@tanstack/react-query': 4.16.1_biqbaboplfbrettd7655fr4n2y
   antd: 4.24.1_biqbaboplfbrettd7655fr4n2y
   autoprefixer: 10.4.13_postcss@8.4.18
+  lodash-es: 4.17.21
   postcss: 8.4.18
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -35,6 +40,7 @@ dependencies:
 
 devDependencies:
   '@commitlint/config-conventional': 17.2.0
+  '@types/lodash-es': 4.17.6
   '@types/react': 18.0.25
   '@types/react-dom': 18.0.8
   '@typescript-eslint/eslint-plugin': 5.42.1_2udltptbznfmezdozpdoa2aemq
@@ -673,6 +679,28 @@ packages:
       react-dom: 18.2.0_react@18.2.0
     dev: false
 
+  /@tanstack/query-core/4.15.1:
+    resolution: {integrity: sha512-+UfqJsNbPIVo0a9ANW0ZxtjiMfGLaaoIaL9vZeVycvmBuWywJGtSi7fgPVMCPdZQFOzMsaXaOsDtSKQD5xLRVQ==}
+    dev: false
+
+  /@tanstack/react-query/4.16.1_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-PDE9u49wSDykPazlCoLFevUpceLjQ0Mm8i6038HgtTEKb/aoVnUZdlUP7C392ds3Cd75+EGlHU7qpEX06R7d9Q==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-native: '*'
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+      react-native:
+        optional: true
+    dependencies:
+      '@tanstack/query-core': 4.15.1
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      use-sync-external-store: 1.2.0_react@18.2.0
+    dev: false
+
   /@tsconfig/node10/1.0.9:
     resolution: {integrity: sha512-jNsYVVxU8v5g43Erja32laIDHXeoNvFEpX33OK4d6hljo3jDhCBDhx5dhCCTMWUojscpAagGiRkBKxpdl9fxqA==}
     dev: true
@@ -691,6 +719,16 @@ packages:
 
   /@types/json-schema/7.0.11:
     resolution: {integrity: sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==}
+    dev: true
+
+  /@types/lodash-es/4.17.6:
+    resolution: {integrity: sha512-R+zTeVUKDdfoRxpAryaQNRKk3105Rrgx2CFRClIgRGaqDTdjsm8h6IYA8ir584W3ePzkZfst5xIgDwYrlh9HLg==}
+    dependencies:
+      '@types/lodash': 4.14.189
+    dev: true
+
+  /@types/lodash/4.14.189:
+    resolution: {integrity: sha512-kb9/98N6X8gyME9Cf7YaqIMvYGnBSWqEci6tiettE6iJWH1XdJz/PO8LB0GtLCG7x8dU3KWhZT+lA1a35127tA==}
     dev: true
 
   /@types/minimist/1.2.2:
@@ -2731,6 +2769,10 @@ packages:
       p-locate: 5.0.0
     dev: true
 
+  /lodash-es/4.17.21:
+    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
+    dev: false
+
   /lodash.merge/4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
     dev: true
@@ -4408,6 +4450,14 @@ packages:
     dependencies:
       punycode: 2.1.1
     dev: true
+
+  /use-sync-external-store/1.2.0_react@18.2.0:
+    resolution: {integrity: sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /util-deprecate/1.0.2:
     resolution: {integrity: sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=}
