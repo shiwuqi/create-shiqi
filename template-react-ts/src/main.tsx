@@ -17,14 +17,14 @@ let root: ReactDOM.Root | null = null
 const render = (props: { container?: HTMLElement } = {}): void => {
   const { container } = props
 
-  root = ReactDOM.createRoot(container ? container.querySelector('#container') as HTMLElement : document.getElementById('root') as HTMLElement)
+  root = ReactDOM.createRoot(container ? container.querySelector('#container') as HTMLElement : document.querySelector('#container') as HTMLElement)
 
   root.render(
     <React.StrictMode>
       <Router
         basename={
           qiankunWindow.__POWERED_BY_QIANKUN__
-            ? '/'
+            ? '/qiankun-test'
             : import.meta.env.BASE_URL
         }>
         <QueryClientProvider client={queryClient}>

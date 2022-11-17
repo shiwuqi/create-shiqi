@@ -99,6 +99,11 @@ const FRAMEWORKS: Framework[] = [
                 name: 'react-ts',
                 display: 'TypeScript',
                 color: blue
+            },
+            {
+                name: 'qiankun-base',
+                display: 'TypeScript',
+                color: lightGreen
             }
         ]
     },
