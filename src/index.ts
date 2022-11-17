@@ -182,6 +182,18 @@ const FRAMEWORKS: Framework[] = [
         ]
     },
     {
+        name: 'node',
+        display: 'Node',
+        color: green,
+        variants: [
+            {
+                name: 'nest-ts',
+                display: 'TypeScript',
+                color: yellow
+            }
+        ]
+    },
+    {
         name: 'others',
         display: 'Others',
         color: reset,
