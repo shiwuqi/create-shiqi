@@ -30,7 +30,6 @@ const App = () => {
           </div>
         )
       }
-
       <div className='h-full' id='subApp' />
     </>
   )
