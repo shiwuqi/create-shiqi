@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body } from '@nestjs/common';
+import { Controller, Get, Post, Body, Logger } from '@nestjs/common';
 import { TestService } from './test.service';
 import { Test } from './test.entity';
 
@@ -13,6 +13,7 @@ export class TestController {
 
     @Post()
     create(@Body() test: Test) {
+        Logger.log(test);
         return this.testService.create(test);
     }
 }

@@ -13,8 +13,8 @@ import { TestModule } from './test/test.module';
       port: 3306,
       username: "root",
       password: "password",
-      database: "test_nestjs",
-      entities: ["/**/*.entity{.ts,.js}"],
+      database: "testdb",
+      entities: ["dist/**/*.entity{.ts,.js}"],
       synchronize: true
     }),
     TestModule
