@@ -10,11 +10,24 @@ export class TestService {
         @InjectRepository(Test) private testRepository: Repository<Test>,
     ) { }
 
-    getHelloNest(): string {
-        return 'Hello Nest!';
+    async getTestList(): Promise<Test[]> {
+        return await this.testRepository.find();
+    }
+
+    findOne(id: string): Promise<Test> {
+        return this.testRepository.findOne({
+            where: {
+                id: Number(id)
+            }
+        });
     }
 
     async create(test: Test) {
-        this.testRepository.save(test);
+        const result = await this.testRepository.save(test);
+        return result;
+    }
+
+    async delete(id: string): Promise<void> {
+        await this.testRepository.delete(id);
     }
 }
