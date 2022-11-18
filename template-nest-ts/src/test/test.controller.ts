@@ -1,6 +1,6 @@
 import { Controller, Get, Post, Body } from '@nestjs/common';
 import { TestService } from './test.service';
-import { Request } from 'express';
+import { Test } from './test.entity';
 
 @Controller('test')
 export class TestController {
@@ -12,7 +12,7 @@ export class TestController {
     }
 
     @Post()
-    create(@Body() request: Request) {
-        return '成功';
+    create(@Body() test: Test) {
+        return this.testService.create(test);
     }
 }
