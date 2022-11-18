@@ -7,9 +7,21 @@ import { TestModule } from './test/test.module';
 
 @Module({
   imports: [
+    TypeOrmModule.forRoot({
+      type: "mysql",
+      host: "localhost",
+      port: 3306,
+      username: "root",
+      password: "password",
+      database: "test_nestjs",
+      entities: ["/**/*.entity{.ts,.js}"],
+      synchronize: true
+    }),
     TestModule
   ],
   controllers: [AppController],
   providers: [AppService],
 })
-export class AppModule { }
+export class AppModule {
+  constructor(private readonly connection: Connection) { }
+}

@@ -1,5 +1,6 @@
 import { Controller, Get, Post, Body } from '@nestjs/common';
 import { TestService } from './test.service';
+import { Request } from 'express';
 
 @Controller('test')
 export class TestController {
@@ -11,7 +12,7 @@ export class TestController {
     }
 
     @Post()
-    create(@Body() test: String) {
+    create(@Body() request: Request) {
         return '成功';
     }
 }
