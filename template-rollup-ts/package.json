@@ -3,9 +3,30 @@
   "version": "0.0.0",
   "description": "",
   "scripts": {
-    "clean": "rm -rf node_modules ./**/*/node_modules"
+    "clean": "rm -rf node_modules ./**/*/node_modules",
+    "prepare": "husky install && npx husky add .husky/pre-commit 'npx lint-staged' && npx husky add .husky/commit-msg 'npx --no-install commitlint --edit '$1''",
+    "eslint": "eslint --ext .js,.jsx,.ts,.tsx src",
+    "lint": "lint-staged"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/config-conventional": "^17.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/parser": "^5.43.0",
+    "commitlint": "^17.2.0",
+    "eslint": "^8.28.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,less,md,json}": [
+      "eslint --ignore-path .eslintignore --fix",
+      "git add"
+    ]
+  }
 }
