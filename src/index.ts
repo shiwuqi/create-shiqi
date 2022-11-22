@@ -175,9 +175,14 @@ const FRAMEWORKS: Framework[] = [
                 color: yellow
             },
             {
+                name: 'rollup-library',
+                display: 'Typescript',
+                color: blue
+            },
+            {
                 name: 'vite-react-library',
                 display: 'TypeScript',
-                color: blue
+                color: red
             }
         ]
     },
