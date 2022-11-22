@@ -1,0 +1,15 @@
+{
+  "name": "app2",
+  "version": "0.0.0",
+  "description": "",
+  "type": "module",
+  "main": "./dist/index.esm.js",
+  "module": "./dist/index.cjs.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
