@@ -1,0 +1,55 @@
+.fan-sidebar-wrap {
+    /* border-right: 1px solid #e8e8e8; */
+    height: 100%;
+}
+
+.fan-fixed-wrap {
+    border-right: 1px solid #e5e5e5;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #fff;
+    position: relative;
+    background: #fff;
+    background-color: #fff;
+}
+
+.fan-sidebar {
+    border: none !important;
+}
+
+.fan-sidebar-loading {
+    min-height: 200px;
+    text-align: center;
+    padding: 20px 0px;
+    border-right: 1px solid #e5e5e5;
+}
+
+.fan-input-search {
+    padding: 10px !important;
+}
+
+.fan-input-search .ant-input-suffix {
+    right: 22px !important;
+}
+
+.fan-dark {
+    background-color: #2d3035;
+    background: #2d3035 !important;
+}
+
+.fan-dark input {
+    background-color: transparent;
+    color: #fff;
+}
+
+.fan-dark .ant-input-search-icon {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.fan-sidebar-container {
+    color: rgba(0, 0, 0, 0.85) !important;
+}
+
+.ant-menu-dark .ant-menu-inline.ant-menu-sub {
+    background: #404348 !important;
+}

@@ -40,52 +40,6 @@ type FrameworkVariant = {
 
 const FRAMEWORKS: Framework[] = [
     {
-        name: 'vanilla',
-        display: 'Vanilla',
-        color: yellow,
-        variants: [
-            {
-                name: 'vanilla',
-                display: 'JavaScript',
-                color: yellow
-            },
-            {
-                name: 'vanilla-ts',
-                display: 'TypeScript',
-                color: blue
-            }
-        ]
-    },
-    {
-        name: 'vue',
-        display: 'Vue',
-        color: green,
-        variants: [
-            {
-                name: 'vue',
-                display: 'JavaScript',
-                color: yellow
-            },
-            {
-                name: 'vue-ts',
-                display: 'TypeScript',
-                color: blue
-            },
-            {
-                name: 'custom-create-vue',
-                display: 'Customize with create-vue ↗',
-                color: green,
-                customCommand: 'npm create vue@latest TARGET_DIR'
-            },
-            {
-                name: 'custom-nuxt',
-                display: 'Nuxt ↗',
-                color: lightGreen,
-                customCommand: 'npm exec nuxi init TARGET_DIR'
-            }
-        ]
-    },
-    {
         name: 'react',
         display: 'React',
         color: cyan,
@@ -98,69 +52,17 @@ const FRAMEWORKS: Framework[] = [
             {
                 name: 'react-ts',
                 display: 'TypeScript',
+                color: magenta
+            },
+            {
+                name: 'react-antd5-ts',
+                display: 'Antd5-TypeScript',
                 color: blue
             },
             {
                 name: 'qiankun-base',
-                display: 'TypeScript',
+                display: 'Qiankun',
                 color: lightGreen
-            }
-        ]
-    },
-    {
-        name: 'preact',
-        display: 'Preact',
-        color: magenta,
-        variants: [
-            {
-                name: 'preact',
-                display: 'JavaScript',
-                color: yellow
-            },
-            {
-                name: 'preact-ts',
-                display: 'TypeScript',
-                color: blue
-            }
-        ]
-    },
-    {
-        name: 'lit',
-        display: 'Lit',
-        color: lightRed,
-        variants: [
-            {
-                name: 'lit',
-                display: 'JavaScript',
-                color: yellow
-            },
-            {
-                name: 'lit-ts',
-                display: 'TypeScript',
-                color: blue
-            }
-        ]
-    },
-    {
-        name: 'svelte',
-        display: 'Svelte',
-        color: red,
-        variants: [
-            {
-                name: 'svelte',
-                display: 'JavaScript',
-                color: yellow
-            },
-            {
-                name: 'svelte-ts',
-                display: 'TypeScript',
-                color: blue
-            },
-            {
-                name: 'custom-svelte-kit',
-                display: 'SvelteKit ↗',
-                color: red,
-                customCommand: 'npm create svelte@latest TARGET_DIR'
             }
         ]
     },
@@ -171,18 +73,18 @@ const FRAMEWORKS: Framework[] = [
         variants: [
             {
                 name: 'rollup-ts',
-                display: 'TypeScript',
+                display: 'Rollup',
                 color: yellow
             },
             {
                 name: 'rollup-library',
-                display: 'Typescript',
+                display: 'Rollup-Library',
                 color: blue
             },
             {
                 name: 'vite-react-library',
-                display: 'TypeScript',
-                color: red
+                display: 'Vite-React-Library',
+                color: lightRed
             }
         ]
     },
