@@ -52,7 +52,7 @@ export default ({ mode }: { mode: string; }) => {
       host: '0.0.0.0',
       proxy: {
         '/api': {
-          target: 'http://47.109.82.231:7005',
+          target: 'http://localhost:7005',
           changeOrigin: true,
           rewrite: (path) => path.replace(/^\/api/, '/'),
         },
