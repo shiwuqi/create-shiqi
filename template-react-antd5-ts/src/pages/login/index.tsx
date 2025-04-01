@@ -66,14 +66,12 @@ const Login = () => {
   return (
     <div
       className={`
-            relative flex justify-center items-center h-full
-            ${'bg-[url("https://tf.wdjiayuan.com/static/img/login-background.64d9a1af.jpg")]'}
-            bg-cover
+            relative flex justify-center items-center h-full bg-cover
         `}
     >
       <div className="absolute right-32 w-96 rounded-2xl bg-white p-6">
         <Title level={4} className="w-full text-center mb-6 text-slate-500">
-          终端取号机
+          后台管理系统
         </Title>
         <FormRender
           options={options}
@@ -87,8 +85,7 @@ const Login = () => {
       </div>
       <div className="fixed bottom-4">
         <Text className="text-white">
-          Copyright © 2020-2022 善智爱到家探访后台管理系统
-          版权所有备案序号：皖ICP备20001767号
+          Copyright © 2020-2025 后台管理系统
         </Text>
       </div>
     </div>

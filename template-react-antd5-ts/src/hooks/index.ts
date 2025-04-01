@@ -1,2 +1,2 @@
-export { default as useEffectExceptFirst } from './useEffectExpectFtirst'
+export { default as useEffectExceptFirst } from './useEffectExceptFirst'
 export { default as usePagination } from './usePagination'
